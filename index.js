@@ -7,7 +7,7 @@ if (r % 7 == 0) {
     pi = 3.14
 }
 
-    luas = 22/7 * pi * r
+    luas = pi * r * r
     keliling = 2 * pi * r
 
 console.log(luas)
