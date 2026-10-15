@@ -25,3 +25,5 @@ flowchart TD
     outputkeliling --> stop
     
 ```
+
+saya memiliki objek lingkaran yang berisi key r dengan value 7, method cekPhi untuk ngecek apakah r habis dibagi 7 jika iya maka gunakan 22/7 jika tidak gunakan 3.14, method hitungLuas untuk menghitung luas lingkaran pi yang digunakan berdasarkan hasil dari method cekPhi yang dijalankan tadi, method hitungKeliling juga memakai method cekPhi digunakan untuk menghitung keliling sebuah lingkaran, method tampilkanHasil berfungsi untuk menampilan hasil dari method hitungLuas dan method hitungKeliling. kemudian nanti method tampilkanHasil dijalankan diluar objek lingkaran dengan cara memanggil object lingkaran kemudian panggil methodnya lingkaran.tampilkanHasil() 
