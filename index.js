@@ -1,14 +1,27 @@
 const r = 7
-let pi, luas, keliling
 
-if (r % 7 == 0) {
-    pi = 22/7 
-} else {
-    pi = 3.14
+// Pure
+function cekPhi(radius){
+    let pi
+    if (radius % 7 == 0) {
+        pi = 22/7 
+    } else {
+        pi = 3.14
+    }
+    return pi
 }
 
-luas = pi * r * r
-keliling = 2 * pi * r
+// Impure function
+function hitung(){
+    pi = cekPhi(r)
+    let luas, keliling
+    luas = pi * r * r
+    keliling = 2 * pi * r
+    return [
+        luas,
+        keliling
+    ]
+}
 
-console.log(luas)
-console.log(keliling)
+const [luas, keliling] = hitung()
+console.log(luas, keliling)
