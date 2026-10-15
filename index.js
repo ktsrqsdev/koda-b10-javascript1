@@ -1,27 +1,26 @@
-const r = 7
-
-// Pure
-function cekPhi(radius){
-    let pi
-    if (radius % 7 == 0) {
-        pi = 22/7 
-    } else {
-        pi = 3.14
+const lingkaran = {
+    r : 7,
+    cekPhi: function(){
+        if(this.r % 7 == 0){
+            pi = 22/7
+        }else{
+            pi = 3.14
+        }
+        return pi
+    },
+    hitungLuas: function(){
+        luas = this.cekPhi() * this.r * this.r
+        return luas
+    },
+    hitungKeliling: function(){
+        keliling = 2 * this.cekPhi() * this.r  
+        return keliling
+    },
+    tampilkanHasil: function(){
+        this.cekPhi()
+        console.log(this.hitungLuas())
+        console.log(this.hitungKeliling())
     }
-    return pi
 }
 
-// Impure function
-function hitung(){
-    pi = cekPhi(r)
-    let luas, keliling
-    luas = pi * r * r
-    keliling = 2 * pi * r
-    return [
-        luas,
-        keliling
-    ]
-}
-
-const [luas, keliling] = hitung()
-console.log(luas, keliling)
+lingkaran.tampilkanHasil()
