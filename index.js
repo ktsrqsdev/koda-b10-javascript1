@@ -22,3 +22,5 @@ const lingkaran = {
         console.log(this.hitungKeliling())
     }
 }
+
+lingkaran.tampilkanHasil()
